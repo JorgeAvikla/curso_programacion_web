@@ -77,3 +77,21 @@ defined('EXIT_USER_INPUT')     || define('EXIT_USER_INPUT', 7); // invalid user 
 defined('EXIT_DATABASE')       || define('EXIT_DATABASE', 8); // database error
 defined('EXIT__AUTO_MIN')      || define('EXIT__AUTO_MIN', 9); // lowest automatically-assigned error code
 defined('EXIT__AUTO_MAX')      || define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
+
+
+// CONSSTANTES PARA MI SEISTEMA
+
+define("SIN_TAREA",0);
+define("TAREA_DASHBOARD","dashboard");
+define("TAREA_LOGIN","login");
+define("TAREA_LOGOUT","logout");
+
+
+
+
+// CONSTANTES PARA ALERTAS
+
+define('ALERTA_DE_EXITO',1);
+define('ALERTA_DE_ERROR',2);
+define('ALERTA_DE_WARNING',3);
+define('ALERTA_DE_INFO',4);
