@@ -34,6 +34,9 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Routing::index');
 $routes->get('/routing/(:any)', 'Routing::index/$1');
+$routes->get('/routing/(:any)/(:num)', 'Routing::index/$1/$2');
+
+
 
 
 /*

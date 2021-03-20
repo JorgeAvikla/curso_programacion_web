@@ -13,7 +13,8 @@ class Dashboard extends BaseController{
 
 	private function crear_vista($nombre_vista,$datos = null){
 		$contenido['contenido'] = view($nombre_vista,$datos==null?array():$datos);
-		// $contenido['menu'] = crear_menu();
+		// $contenido['menu'] = '';
+		$contenido['menu'] = crear_menu();
 		return (validar_session() == false? redirect()->to(base_url("routing/".SIN_TAREA)):view("plantilla/sistema",$contenido));;
 	}//end of function crear_vista
 

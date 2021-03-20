@@ -83,6 +83,31 @@ defined('EXIT__AUTO_MAX')      || define('EXIT__AUTO_MAX', 125); // highest auto
 
 define("SIN_TAREA",0);
 define("TAREA_DASHBOARD","dashboard");
+define("TAREA_JUGADORES_TODOS","todos_los_jugadores");
+define("TAREA_JUGADOR_NUEVO","jugador_nuevo");
+define("TAREA_JUGADOR_DETALLES","jugador_detalles");
+
+define("TAREA_TORNEOS_TODOS","todos_los_torneos");
+define("TAREA_TORNEO_NUEVO","torneo_nuevo");
+define("TAREA_TORNEO_DETALLES","torneo_detalles");
+
+define("TAREA_EQUIPOS_TODOS","todos_los_equipos");
+define("TAREA_EQUIPO_NUEVO","equipo_nuevo");
+define("TAREA_EQUIPO_DETALLES","equipo_detalles");
+
+define("TAREA_PARTIDOS_TODOS","todos_los_partidos");
+define("TAREA_PARTIDO_NUEVO","partido_nuevo");
+define("TAREA_PARTIDO_DETALLES","partido_detalles");
+define("TAREA_RESULTADOS_PARTIDOS","resultados_partidos");
+
+define("TAREA_CATEGORIAS_TODAS","todas_las_categorias_equipos");
+define("TAREA_CATEGORIA_NUEVA","categorias_equipo_nueva");
+
+define("TAREA_TIPOS_TARJETAS_TODAS","todos_los_tipos_tarjetas");
+define("TAREA_TIPOS_TARJETA_NUEVA","tipos_tarjeta_nueva");
+define("TAREA_USUARIOS","usuarios");
+
+
 define("TAREA_LOGIN","login");
 define("TAREA_LOGOUT","logout");
 
