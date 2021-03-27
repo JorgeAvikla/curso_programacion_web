@@ -29,6 +29,20 @@ class Routing extends BaseController{
             		return redirect()->to(base_url("jugador_detalles"));
 	            		break;
 
+				case TAREA_TORNEOS_TODOS:
+            		return redirect()->to(base_url("todos_los_torneos"));
+            		break;
+
+				case TAREA_TORNEO_NUEVO:
+            		return redirect()->to(base_url("torneo_nuevo"));
+            		break;
+
+				case TAREA_TORNEO_DETALLES:
+				$session= session();
+				$session->set('id_torneo_detalles',$id_editar);
+            		return redirect()->to(base_url("torneo_detalles"));
+            		break;
+
             	default:
             		return redirect()->to(base_url("dashboard"));
             		break;

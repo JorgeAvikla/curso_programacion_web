@@ -41,6 +41,7 @@ class Tabla_equipos extends Model{
     public function seleccionar_equipos_por_torneo($id_del_torneo){
         $equipos = $this->select('equipos.id_equipo, equipos.nombre_equipo, equipos.logo_equipo')
                         ->join("equipos_torneos","equipos_torneos.id_equipo =equipos.id_equipo")
+                        ->where('equipos_torneos.id_torneo',$id_del_torneo)
                         ->findAll();
         if ($equipos != null) {
             return $equipos;
